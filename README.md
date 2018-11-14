@@ -9,7 +9,7 @@ In order to have some basic programs available, run the commands
 
 ```sh
 sudo apt-get update
-sudo apt-get install atom curl git gnupg2 i3 ranger zathura
+sudo apt-get install atom curl git gnupg2 i3 ranger xserver-xorg-input-synaptics zathura
 sudo apt-get upgrade
 ```
 
