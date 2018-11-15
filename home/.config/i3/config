@@ -10,7 +10,7 @@ exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 
 # launch i3lock with black background
-bindsym $mod+End exec i3lock -c 000000
+bindsym $mod+Return exec i3lock -c 000000
 
 # start ranger
 bindsym $mod+m exec xfce4-terminal -x bash -i -c "ranger"
