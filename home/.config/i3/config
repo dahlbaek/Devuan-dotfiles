@@ -12,12 +12,6 @@ exec --no-startup-id xset -dpms
 # launch i3lock with black background
 bindsym $mod+Return exec i3lock -c 000000
 
-# start ranger
-bindsym $mod+m exec xfce4-terminal -x bash -i -c "ranger"
-
-# start nvim
-bindsym $mod+n exec xfce4-terminal -x bash -i -c "vim.tiny"
-
 # pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -142,9 +136,9 @@ bindsym $mod+Shift+r restart
 
 # Create Log out, Reboot, Poweroff bindings
 mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
-  bindsym $mod+r exec systemctl reboot
+  bindsym $mod+r exec sudo /sbin/reboot --
   bindsym $mod+l exit
-  bindsym $mod+p exec systemctl poweroff
+  bindsym $mod+p exec sudo /sbin/poweroff --
 
 # back to normal: Enter or Escape
   bindsym Escape mode "default"
